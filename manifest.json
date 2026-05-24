@@ -1,0 +1,150 @@
+[
+  {
+    "route": "/login",
+    "label": "Login",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-login.png",
+      "user-guide-assets/screenshots/page-login-form-validation-error.png"
+    ],
+    "usage_steps": [
+      "Navigate to the login page at /login",
+      "Enter your email address or username in the 'Email or Username' field",
+      "Enter your password in the 'Password' field",
+      "Click the 'Sign in' button to authenticate",
+      "If credentials are invalid, an error message will appear",
+      "Click 'Create one' link at the bottom to navigate to the registration page"
+    ]
+  },
+  {
+    "route": "/register",
+    "label": "Register",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-register.png",
+      "user-guide-assets/screenshots/page-register-form-validation-error.png"
+    ],
+    "usage_steps": [
+      "Navigate to the registration page at /register",
+      "Enter your email address in the 'Email' field",
+      "Choose a username (3-30 characters, letters, numbers, and underscores only)",
+      "Enter a password (minimum 8 characters) in the 'Password' field",
+      "Re-enter your password in the 'Confirm Password' field",
+      "Click 'Create account' to register",
+      "If there are validation errors, they will appear below each field",
+      "Click 'Sign in' link to go back to the login page if you already have an account"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Dashboard (Empty State)",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard-empty.png"
+    ],
+    "usage_steps": [
+      "After logging in, you are redirected to the dashboard",
+      "When no todos exist, an empty state message is displayed",
+      "Click 'Create Todo' button to add your first task",
+      "The header shows the app title and a logout button"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Dashboard (With Todos)",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard.png"
+    ],
+    "usage_steps": [
+      "The dashboard displays all your todos in a list view",
+      "Each todo shows its title, description, priority badge, and status",
+      "Stats cards at the top show total, pending, in-progress, and completed counts",
+      "Use the filter bar to narrow down todos by status or priority",
+      "Use the sort dropdown to reorder todos",
+      "Click the floating '+' button (bottom-right) to create a new todo",
+      "Click the checkbox to mark a todo as done",
+      "Click the trash icon to delete a todo"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Create Todo Modal",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard-modal-create-todo.png",
+      "user-guide-assets/screenshots/page-dashboard-modal-create-todo-filled.png"
+    ],
+    "usage_steps": [
+      "Click the '+' floating action button or 'Create Todo' button",
+      "A modal dialog appears with a form",
+      "Enter a title for your todo (required, max 200 characters)",
+      "Optionally add a description for more details",
+      "Select a priority level: Low, Medium, or High",
+      "Optionally set a due date",
+      "Click 'Create Todo' to save, or 'Cancel' to dismiss"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Filter by Status",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard-filter-status-pending.png"
+    ],
+    "usage_steps": [
+      "Use the 'Status' dropdown in the filter bar",
+      "Select 'Pending', 'In Progress', or 'Done' to filter todos",
+      "Select 'All' to show all todos regardless of status",
+      "The todo list updates immediately when a filter is applied"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Filter by Priority",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard-filter-priority-high.png"
+    ],
+    "usage_steps": [
+      "Use the 'Priority' dropdown in the filter bar",
+      "Select 'Low', 'Medium', or 'High' to filter by priority",
+      "Select 'All' to show all todos regardless of priority",
+      "Combine with the status filter for more specific results"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Sort Todos",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard-sort-created-at.png"
+    ],
+    "usage_steps": [
+      "Use the 'Sort by' dropdown on the right side of the filter bar",
+      "Select 'Due Date' to sort by upcoming deadlines",
+      "Select 'Created At' to sort by creation date",
+      "Select 'Default' to return to the default ordering"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Delete Confirmation",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard-modal-delete-confirm.png"
+    ],
+    "usage_steps": [
+      "Click the trash icon on any todo item",
+      "A confirmation dialog appears asking you to confirm deletion",
+      "Click 'Delete' to permanently remove the todo",
+      "Click 'Cancel' to dismiss and keep the todo",
+      "Note: This action cannot be undone"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "label": "Complete a Todo",
+    "screenshots": [
+      "user-guide-assets/screenshots/page-dashboard-todo-completed.png"
+    ],
+    "usage_steps": [
+      "Click the circular checkbox on the left side of a todo item",
+      "The todo is marked as 'Done' with a green checkmark",
+      "The title gets a strikethrough style to indicate completion",
+      "Click the checkbox again to reopen the todo (mark as pending)",
+      "Stats cards update automatically to reflect the change"
+    ]
+  }
+]
